@@ -1,8 +1,8 @@
 {
-  "name": "persian-datepicker",
-  "version": "1.2.0",
+  "name": "mseraj-persian-datepicker",
+  "version": "1.0.0",
   "main": "dist/js/persian-datepicker.js",
-  "description": "jQuery datepicker plugin work with Iranian calendar.",
+  "description": "jQuery datepicker plugin work with Iranian calendar (It's Forked from Reza Babakhani persian datepicker).",
   "keywords": [
     "jquery-plugin",
     "persian-datepicker",
@@ -12,17 +12,16 @@
     "persian-date"
   ],
   "license": "MIT",
-  "author": "Reza Babakhani <babakhani.reza@gmail.com>",
+  "author": "Mohammad Seraj <mseraj515@gmail.com>",
   "contributors": [
     {
-      "name": "Reza Babakhani",
-      "email": "babakhani.reza@gmail.com"
+      "name": "Mohammad Seraj",
+      "email": "mseraj515@gmail.com"
     }
   ],
-  "repository": "https://github.com/babakhani/pwt.datepicker.git",
-  "homepage": "http://babakhani.github.io/PersianWebToolkit/docs/datepicker",
+  "repository": "https://github.com/mohammad-srj/pwt.datepicker",
   "bugs": {
-    "url": "https://github.com/babakhani/pwt.datepicker/issues"
+    "url": "https://github.com/mohammad-srj/pwt.datepicker/issues"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
