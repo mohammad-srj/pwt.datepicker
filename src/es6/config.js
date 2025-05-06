@@ -132,12 +132,11 @@ const Config = {
 
 
     /**
-     * @description from v1.0.0 this options is deprecated, use calendar.persian.locale instead
-     * @deprecated
+     * @description if set true return input value persian
      * @type boolean
-     * @default true
+     * @default false
      */
-    'persianDigit': true,
+    'persianDigit': false,
 
 
     /**
@@ -171,6 +170,7 @@ const Config = {
     'formatter': function (unixDate) {
         let self = this,
           pdate = this.model.PersianDate.date(unixDate);
+        pdate.formatPersian = this.persianDigit
         return pdate.format(self.format);
     },
 
@@ -228,6 +228,7 @@ const Config = {
         }
         else {
             pd = this.model.PersianDate.date(unixDate);
+            pd.formatPersian = this.persianDigit
             return pd.format(self.altFormat);
         }
     },
@@ -686,6 +687,7 @@ const Config = {
          */
         'titleFormatter': function (year, month) {
             let titleDate = this.model.PersianDate.date([year, month]);
+            titleDate.formatPersian = this.persianDigit;
             return titleDate.format(this.model.options.dayPicker.titleFormat);
         },
 
@@ -728,6 +730,7 @@ const Config = {
          */
         'titleFormatter': function (unix) {
             let titleDate = this.model.PersianDate.date(unix);
+            titleDate.formatPersian = this.persianDigit;
             return titleDate.format(this.model.options.monthPicker.titleFormat);
         },
 
@@ -771,6 +774,8 @@ const Config = {
             let remaining = parseInt(year / 12, 10) * 12;
             let startYear = this.model.PersianDate.date([remaining]);
             let endYear = this.model.PersianDate.date([remaining + 11]);
+            startYear.formatPersian = this.persianDigit
+            endYear.formatPersian = this.persianDigit
             return startYear.format(this.model.options.yearPicker.titleFormat) + '-' + endYear.format(this.model.options.yearPicker.titleFormat);
         },
 
