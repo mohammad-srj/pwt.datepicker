@@ -1,5 +1,5 @@
 {
-  "name": "mseraj-persian-datepicker",
+  "name": "pwt-datepicker",
   "version": "1.0.0",
   "main": "dist/js/persian-datepicker.js",
   "description": "jQuery datepicker plugin work with Iranian calendar (It's Forked from Reza Babakhani persian datepicker).",
@@ -63,5 +63,6 @@
     "doctest": "./node_modules/markdown-doctest/bin/cmd.js README.md && ./node_modules/markdown-link-check/markdown-link-check README.md &&  ./node_modules/markdown-doctest/bin/cmd.js doc/*.md && ./node_modules/markdown-link-check/markdown-link-check  doc/*.md",
     "eslint": "./node_modules/eslint/bin/eslint.js src/es6",
     "pre-dev": "sudo npm install -g sync-pkg babel grunt sass-lint pre-commit"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
